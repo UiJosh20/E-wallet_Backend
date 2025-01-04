@@ -6,6 +6,7 @@ class DataView(APIView):
         data = {
             "name": "John Doe",
             "balance": 8899750,
+           
             "recent_activities": [
                 {"icon":"https://res.cloudinary.com/dubaep0qz/image/upload/v1736001034/ba8dpf4uwhltshodahwk.png","name": "Netflix Subscription", "amount": 15.99, "currency": "USD", "time":"5:25PM"},
                 {'icon':'https://res.cloudinary.com/dubaep0qz/image/upload/v1736001181/jkuzp8vzkr7btuqfpaa6.png',"name": "Amazon Purchase", "amount": 10.50, "currency": "USD", "time":"8:25PM"},
@@ -27,6 +28,7 @@ class DataView(APIView):
                     "name": "Vacation",
                     "amount": 5000,
                 }
-            ]
+            ],
+             "UID":" 8194638720",
         }
         return Response(data)
