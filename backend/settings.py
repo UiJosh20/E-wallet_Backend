@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ie-nk%=*nx(p&dmszd%6(qdwlf@d=^oc-h+%qc61%9qe&fsg!!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://e-wallet-backend-fxbv.onrender.com"]
+ALLOWED_HOSTS = ["https://e-wallet-backend-fxbv.onrender.com", "127.0.0.1"]
 
 
 # Application definition
@@ -53,9 +53,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-]
+# CORS configuration for allowing all origins
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 ROOT_URLCONF = 'backend.urls'
 
