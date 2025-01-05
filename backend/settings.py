@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173/',
+    'http://localhost:5173',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -83,12 +83,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'walletdb1'),  # Replace with your DB name
-        'USER': os.getenv('DB_USER', 'walletdb1_user'),  # Replace with your DB user
-        'PASSWORD': os.getenv('DB_PASSWORD', 'WS1kYLu6L13rEEnaTiLoSRrQhLqZ07zf'),  # Replace with your DB password
-        'HOST': os.getenv('DB_HOST', 'dpg-ctt3rptumphs73francg-a'),  # Replace with your DB host
-        'PORT': os.getenv('DB_PORT', '5432'),  # Default PostgreSQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
