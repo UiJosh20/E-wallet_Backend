@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-ie-nk%=*nx(p&dmszd%6(qdwlf@d=^oc-h+%qc61%9qe&fsg!!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://e-wallet-backend-fxbv.onrender.com", "127.0.0.1"]
-CSRF_TRUSTED_ORIGINS = ['https://e-wallet-backend-fxbv.onrender.com']
+ALLOWED_HOSTS = ["https://e-wallet-backend-azhs.onrender.com", "127.0.0.1"]
+
 
 
 
